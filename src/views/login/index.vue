@@ -141,7 +141,7 @@ export default {
         await this.$refs.loginForm.validate()
         this.loading = true
         await this.login(this.loginForm)
-        this.$router.push({ path: this.direct || '/' })
+        this.$router.push({ path: this.redirect || '/' })
         this.loading = false
       } catch (e) {
         console.log(e)
